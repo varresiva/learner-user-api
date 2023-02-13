@@ -1,0 +1,19 @@
+server:
+    port: 8232
+spring:
+    datasource:
+        password: Sk@ndh15
+        url: jdbc:mysql://localhost:3306/product_managment?useSSL=false
+        username: root
+    application:
+        name: user-api
+    jpa:
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://34.125.14.97:32770/eureka/
