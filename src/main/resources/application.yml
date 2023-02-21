@@ -1,19 +1,43 @@
-server:
-    port: 8232
 spring:
-    datasource:
-        password: Sk@ndh15
-        url: jdbc:mysql://localhost:3306/product_managment?useSSL=false
-        username: root
-    application:
-        name: user-api
-    jpa:
-        hibernate:
-            ddl-auto: update
-        properties:
-            hibernate:
-                dialect: org.hibernate.dialect.MySQLDialect
+  application:
+    name: learner-user-api
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+  datasource:
+    password: Learner@2023
+    url: jdbc:mysql://34.29.125.76:3306,34.68.236.8:3306/learnerCrownClothing?useSSL=FALSE
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+server:
+  port: 8232
 eureka:
-    client:
-        serviceUrl:
-            defaultZone: http://34.125.14.97:32770/eureka/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8181/eureka/
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    password: Learner@2023
+    url: jdbc:mysql://34.29.125.76:3306,34.68.236.8:3306/learnerCrownClothing?useSSL=FALSE
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://34.125.14.97:32770/eureka/
