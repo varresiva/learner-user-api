@@ -29,7 +29,7 @@ spring:
       on-profile: dev
   datasource:
     password: Learner@2023
-    url: jdbc:mysql://34.29.125.76:3306,34.68.236.8:3306/learnerCrownClothing?useSSL=FALSE
+    url: jdbc:mysql://35.188.122.252:3306/learnerCrownClothing?useSSL=FALSE
     username: root
   jpa:
     hibernate:

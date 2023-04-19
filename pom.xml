@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.learner</groupId>
-	<artifactId>learner-user-api</artifactId>
+	<artifactId>learner-user</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>learner-user-api</name>
 	<description>A microservice for User management</description>
